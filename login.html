@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<script>
+function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+    <style>
+        body{background-color:#00FA9A;}
+        header{color:#FFFFFF; font-size:68px;}
+    </style>
+    <head>
+        <title>FileBox</title>
+    </head>
+    <body>
+        <header style="text-align:center;">Login to File Box</header>
+        <main>
+            <h style="position:absolute;
+            top:270px;
+        left:780px;">Fill the blanks and then Press Login</h>
+            <form>
+                <input placeholder = "Username" id = "username" name = "username" type = "username" style="position:absolute;
+                top:300px;
+            left:780px;
+        height:40px;
+        width:340px;">
+            </form>
+            <form>
+                <input placeholder = "Password"  name = "password" id = "password" type = "password" value="" minlength="4" style="position:absolute;
+                top:370px;
+            left:780px;
+        height:40px;
+        width:340px;">
+        </form>
+        <form action="Homepage.html">
+        <input type = "image" src = "Login.png" width = "160" style="position:absolute;
+        top:390px;
+    left:870px;">
+        </form>
+            <form>
+                <input type="checkbox" onclick="myFunction()" style="position:absolute;
+                top:390px;
+            left:1135px;">
+            <h style="font-size:14px; position:absolute;
+            top:392.5px;
+        left:1155px;">Show Password</h>
+            </form>
+        </main>
+    </body>
+</html>
